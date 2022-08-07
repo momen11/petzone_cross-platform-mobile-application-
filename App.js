@@ -15,37 +15,21 @@ import {
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 import { NavigationContainer } from "@react-navigation/native";
-import { RootStackSCreen } from "./components/screens/RootStack";
+import { RootStackSCreen } from "./component/screens/RootStack";
 import "react-native-gesture-handler";
-import {PetProfile} from './components/screens/PetProfile';
-import { SelectedPet } from "./components/screens/SelectedAdoptPet";
-import { PetVaccines } from "./components/screens/PetVaccines";
-import { PetAccount } from "./components/screens/PetAccount";
-import { HistoryVaccines } from "./components/screens/historyvaccines";
-import { VaccinesDescription } from "./components/screens/vaccinesdescription";
 
 export default function App() {
   return (
     <>
-    <NavigationContainer>
-      <RootStackSCreen/>
-    </NavigationContainer>
+      {
+        <NavigationContainer>
+          <RootStackSCreen />
+        </NavigationContainer>
+      }
     </>
-    /*<>
-    <HistoryVaccines/>
-    </>*/
   );
 }
-/*const styles = StyleSheet.create({
-  container: {
-     flex:1,
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    alignItems:'center',
-    paddingBottom:40
-  },
-  
-});*/
+
 const styles = StyleSheet.create({
   container1: {
     flex: 1,
